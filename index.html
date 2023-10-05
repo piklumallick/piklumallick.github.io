@@ -1,61 +1,167 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>[Your Name]'s GitHub Page</title>
+  <title>Piklu Mallick's GitHub Page</title>
   <style>
     body {
-      font-family: sans-serif;
-      background-color: #fff;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      transition: background-color 0.5s ease;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
     }
 
     h1 {
-      text-align: center;
-      font-size: 3rem;
-      margin-top: 0;
+      margin: 0;
+      font-size: 2.5rem;
     }
 
     p {
+      font-size: 1.2rem;
       line-height: 1.5rem;
     }
 
     section {
       margin-bottom: 2rem;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 2rem;
     }
 
-    #about {
-      padding: 2rem;
-      border: 1px solid #ccc;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
 
-    #projects {
-      padding: 2rem;
-      border: 1px solid #ccc;
+    li {
+      margin-bottom: 1rem;
     }
 
-    #contact {
-      padding: 2rem;
-      border: 1px solid #ccc;
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    /* Navigation menu styles */
+    nav {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: left;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    nav li {
+      margin-right: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Social media icon styles */
+    .social-media-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+    }
+
+    .social-media-icons img {
+      margin-right: 1rem;
+      width: 50px;
+      height: 50px;
     }
   </style>
 </head>
 <body>
-  <h1>[Your Name]'s GitHub Page</h1>
-  <p>This is my GitHub page. Here you can find information about me, my projects, and my contact information.</p>
+  <header>
+    <h1>Piklu Mallick</h1>
+    <p>PhD Student at Georg-August-Universität Göttingen</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#work-experience">Work Experience</a></li>
+      <li><a href="#research-projects">Research Projects</a></li>
+    </ul>
+  </nav>
   <section id="about">
     <h2>About Me</h2>
-    <p>I am a [your profession] with [number] years of experience. I am passionate about [your interests].</p>
+    <p>I am a PhD Student at Georg-August-Universität Göttingen. I am passionate about [your interests].</p>
+    <div class="social-media-icons">
+      <a href="[https://www.linkedin.com/in/piklumallick/]"><img src="linkedin.png" alt="LinkedIn"></a>
+      <a href="[https://github.com/piklumallick]"><img src="github.png" alt="GitHub"></a>
+      <a href="[https://www.researchgate.net/profile/Piklu-Mallick-2]"><img src="researchgate.png" alt="ResearchGate"></a>
+      <a href="[https://scholar.google.com/citations?user=gS4ZixIAAAAJ&hl=en]"><img src="google-scholar.png" alt="Google Scholar"></a>
+    </div>
   </section>
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><a href="[project 1 URL]">[Project 1 Name]</a></li>
-      <li><a href="[project 2 URL]">[Project 2 Name]</a></li>
-      <li><a href="[project 3 URL]">[Project 3 Name]</a></li>
-    </ul>
+  <section id="Education">
+    <h2>Education</h2>
+    <p>[Your education]</p>
   </section>
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>You can contact me at [your email address] or [your social media links].</p>
+  <section id="CV">
+    <h2>CV</h2>
+    <p>[Your CV]</p>
   </section>
+  <section id="Contact">
+    <h2>Contact</h2>
+    <p>[Your contact information]</p>
+  </section>
+  <section id="work-experience">
+    <h2>Work Experience</h2>
+    <p>[Your work experience]</p>
+  </section>
+  <section id="Projects">
+    <h2>Research Projects</h2>
+    <p>[Your research projects]</p>
+  </section>
+  <footer>
+    <p>Contact me at [piklu.mallick@ds.mpg.de]</p>
+  </footer>
+  <script>
+    // Define an array of colors
+    const colors = ['#f2f2f2', '#e6e6e6', '#d9d9d9', '#cccccc', '#bfbfbf', '#b3b3b3', '#a6a6a6', '#999999', '#8c8c8c', '#808080'];
+
+    // Get the body element
+    const body = document.querySelector('body');
+
+    // Set an interval to change the background color every 5 seconds
+    setInterval(() => {
+      // Get a random color from the array
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+      // Set the background color of the body element
+      body.style.backgroundColor = randomColor;
+    }, 5000);
+  </script>
 </body>
 </html>
