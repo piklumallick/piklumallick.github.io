@@ -1,304 +1,44 @@
-<!-- This code is the HTML markup for a webpage that includes a detail writing section. The detail writing section is not included in this code. The code includes a header, navigation menu, sections, and a footer. The styles for the webpage are defined in the embedded CSS. -->
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Piklu Mallick's GitHub Page</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        text-align: justify;
-        background-color: #9fe0d5;
-        transition: background-color 0.5s ease;
-      }
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Piklu Mallick | Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <h1><a href="index.html">Piklu Mallick</a></h1>
+      <p>
+        <img src="assets/uni.png" alt="" class="icon" />
+        <a href="https://uni-goettingen.de/en/563915.html">PhD Student at Georg-August-Universität Göttingen</a>
+      </p>
+      <p>
+        <img src="assets/work.png" alt="" class="icon" />
+        <a href="https://www.ds.mpg.de/">Max Planck Institute for Dynamics and Self-Organization, Göttingen</a>
+      </p>
+    </div>
+    <img src="assets/your-photo.jpg" alt="Piklu Mallick" class="profile-photo" />
+  </header>
+  <nav>
+    <a href="index.html" class="active" aria-current="page">Home</a>
+    <a href="about.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="research-projects.html">Research Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <main>
+    <p>Greetings, I'm Piklu Mallick, a physics enthusiast currently pursuing my Ph.D. in the Faculty of Physics at the University of Göttingen. Additionally, I'm proud to be a part of the vibrant research community at the Max Planck Institute for Dynamics and Self-Organization (MPIDS), where I actively contribute to our collective understanding of these dynamic processes. My academic journey takes a unique twist as I delve into the captivating realm of mathematical modeling of infectious diseases. This field seamlessly bridges the worlds of science, mathematics, and public health, offering a captivating landscape for exploration.</p>
 
-      header {
-        background-color: #a2c67b;
-        color: #fff;
-        padding: 1rem;
-        text-align: center;
-      }
-
-      h1 {
-        margin: 0;
-        font-size: 2.5rem;
-      }
-
-      p {
-        font-size: 1.2rem;
-        line-height: 1.5rem;
-      }
-
-      section {
-        margin-bottom: 2rem;
-        background-color: #fff;
-        border: 1px solid #ccc;
-        padding: 2rem;
-      }
-
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      li {
-        margin-bottom: 1rem;
-      }
-
-      a {
-        color: #fff;
-        text-decoration: none;
-      }
-
-      footer {
-        background-color: #333;
-        color: #fff;
-        padding: 1rem;
-        text-align: center;
-      }
-      nav {
-        background-color: #373333;
-      }
-      nav a {
-        color: #f7f4f4;
-      }
-
-      /* Media queries */
-      @media screen and (max-width: 768px) {
-        /* Global styles */
-        body {
-          font-family: Arial, sans-serif;
-          margin: 0;
-          padding: 0;
-          background-color: #f2f2f2;
-        }
-
-        header {
-          background-color: #5b6053;
-          color: #ced18c;
-          padding: 1rem;
-          text-align: center;
-        }
-
-        h1 {
-          margin: 0;
-        }
-
-        nav {
-          background-color: #333;
-          color: #cb8ef4;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 1rem;
-        }
-
-        nav ul {
-          list-style: none;
-          margin: 0;
-          padding: 0;
-          display: flex;
-        }
-
-        nav li {
-          margin-left: 1rem;
-        }
-
-        nav a {
-          color: #3a9e76;
-          text-decoration: none;
-        }
-      }
-      /* Media query for small screens */
-      @media (max-width: 600px) {
-        nav ul {
-          display: none;
-        }
-
-        nav ul.show-menu {
-          display: flex;
-          flex-direction: column;
-          position: absolute;
-          top: 50px;
-          right: 0;
-          background-color: #d697ef;
-          border: 1px solid #ccc;
-          padding: 1rem;
-          z-index: 1;
-        }
-
-        nav li {
-          margin-bottom: 0.5rem;
-        }
-      }
-      <style>
-        /* Styles for the hamburger button */
-        .hamburger {
-          display: block;
-          position: absolute;
-          top: 0;
-          right: 0;
-          padding: 1rem;
-          font-size: 2rem;
-          cursor: pointer;
-          z-index: 2;
-        }
-        /* Styles for the navigation menu */
-        nav {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 40px;
-          background-color: #373333;
-          color: #d68ff2;
-          position: relative;
-        }
-
-        nav a {
-          text-decoration: none;
-          padding: 1rem;
-          color: #faf8fafc;
-        }
-
-        /* Styles for the navigation menu when open */
-        .show-menu {
-          display: flex;
-          flex-direction: column;
-          position: absolute;
-          top: 50px;
-          right: 0;
-          background-color: #b3e0cd;
-          border: 1px solid #ae52cd;
-          padding: 1rem;
-          z-index: 1;
-        }
-
-        /* Styles for the pull-down menu */
-        .pull-down-menu li {
-          margin-bottom: 0.5rem;
-        }
-      </style>
-      <body>
-        <header style="display: flex; justify-content: space-between; align-items: center;">
-          <div style="display: flex; flex-direction: column; justify-content: center;">
-            <h1 style="text-align: left; margin: 0;">Piklu Mallick</h1>
-            <div style="display: flex; align-items: center;">
-              <img src="assets/uni.png" alt="image description" style="width: 30px; height: 30px; margin-right: 10px;">
-              <p style="text-align: left; margin: 0;"><a href="https://uni-goettingen.de/en/563915.html">PhD Student at Georg-August-Universität Göttingen</a></p>
-            </div>
-            <div style="display: flex; align-items: center;">
-              <img src="assets/work.png" alt="image description" style="width: 30px; height: 30px; margin-right: 10px;">
-              <p style="text-align: left; margin: 0;"><a href="https://www.ds.mpg.de/"> Max Planck Instutute for Dynamics and Self-Organization, Göttingen, Germany</a></p>
-            </div>
-          </div>
-          <img src="assets/your-photo.jpg" alt="your-image-alt" style="border-radius: 95%; width: 150px; height: 183px;">
-        </header>
-        <nav>
-          <!-- Add an ID to the hamburger button for easier selection -->
-          <a id="hamburger" class="hamburger">&#9776;</a>
-          <a href="about.html">About</a>
-          <a href="education.html">Education</a>
-          <a href="research-projects.html">Research Projects</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-        <main>
-          <p>Greetings, I'm Piklu Mallick, a physics enthusiast currently pursuing my Ph.D. in the Faculty of Physics at the University of Göttingen. Additionally, I'm proud to be a part of the vibrant research community at the Max Planck Institute for Dynamics and Self-Organization (MPIDS), where I actively contribute to our collective understanding of these dynamic processes. My academic journey takes a unique twist as I delve into the captivating realm of mathematical modeling of infectious diseases. This field seamlessly bridges the worlds of science, mathematics, and public health, offering a captivating landscape for exploration.</p>
-
-          <p>My research is anchored in understanding the intricate connections between disease dynamics and societal variables. It's a puzzle that I'm deeply committed to solving. In this pursuit, I harness the precision of Bayesian inference as a powerful tool. Additionally, I navigate the complex terrain of dynamical analysis to unearth the hidden facets of these interconnected systems.</p>
-        </main>
-        <footer style="display: flex; justify-content: center; align-items: center; background-color:#c88af1d3;  width: 97%; height: 15px; bottom: 0; border-top: 3px solid black;">
-          <p style="margin-right: 1rem; color: black; text-align: left;">&copy; 2023 Piklu Mallick</p>
-          <p style="margin-right: 1rem; color: black; font-weight: bold; font-family: Times New Roman;">FOLLOW: </p>
-          <a href="https://github.com/piklumallick"><img src="assets/github.png" alt="GitHub" width="40"></a>
-          <a href="https://www.linkedin.com/in/piklumallick/"><img src="assets/linkedin.png" alt="LinkedIn" width="35"></a>
-        </footer>
-        <script>
-          // Define an array of colors
-          const colors_1 = ['#f2f2f2', '#e6e6e6', '#d9d9d9', '#cccccc', '#bfbfbf', '#b3b3b3', '#a6a6a6', '#999999', '#8c8c8c', '#808080'];
-          const colors_2 = ['#a2c67b', '#8fbf6d', '#7cb260', '#6aa653', '#589f46', '#468839', '#336b2c', '#204e1f', '#0e3f12', '#002f05'];
-          const colors_3 = ['#333', '#564b42', '#764d5f', '#4a507a', '#353434', '#9fc2bb', '#e5c5c5', '#e6e6e6', '#574949'];
-          const colors_4 = ['#c88af1d3', '#c88af1', '#b47cd8', 'a06ec0', '#8e60a7', '#7b5290', '#694478', '#53365f', '#412946', '#2f1b2e'];
-
-
-          // Get the body and nav elements
-          const body = document.querySelector('body');
-          const nav = document.querySelector('nav');
-          const header = document.querySelector('header');
-          const footer = document.querySelector('footer');
-
-          // Set an interval to change the background body_color every 7 seconds
-          setInterval(() => {
-            // Get a random color from the array
-            const randomColor_1 = colors_1[Math.floor(Math.random() * colors_1.length)];
-
-            // Set the background color of the body, header, and nav elements
-            body.style.backgroundColor = randomColor_1;
-
-            // Set the background color of the sections
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => {
-              section.style.backgroundColor = randomColor_1;
-            });
-
-          }, 7000);
-
-          // Set an interval to change the background header_color every 10 seconds
-          setInterval(() => {
-            // Get a random color from the array
-            const randomColor_2 = colors_2[Math.floor(Math.random() * colors_2.length)];
-
-            // Set the background color of the body, header, and nav elements
-            header.style.backgroundColor = randomColor_2;
-
-            // Set the background color of the sections
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => {
-              section.style.backgroundColor = randomColor_1;
-            });
-
-          }, 10000);
-
-          // Set an interval to change the background nav_color every 8.5 seconds
-          setInterval(() => {
-            // Get a random color from the array
-            const randomColor_3 = colors_3[Math.floor(Math.random() * colors_3.length)];
-
-            // Set the background color of the body, header, and nav elements
-            nav.style.backgroundColor = randomColor_3;
-
-            // Set the background color of the sections
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => {
-              section.style.backgroundColor = randomColor_1;
-            });
-
-          }, 85000);
-
-          // Set an interval to change the background footer_color every 12 seconds
-          setInterval(() => {
-            // Get a random color from the array
-            const randomColor_4 = colors_4[Math.floor(Math.random() * colors_4.length)];
-
-            // Set the background color of the body, header, and nav elements
-            footer.style.backgroundColor = randomColor_4;
-
-            // Set the background color of the sections
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => {
-              section.style.backgroundColor = randomColor_1;
-            });
-
-          }, 12000);
-
-          // Toggle the navigation menu
-          const hamburger = document.querySelector('.hamburger');
-          const pullDownMenu = document.querySelector('.pull-down-menu');
-
-          hamburger.addEventListener('click', () => {
-            pullDownMenu.classList.toggle('show-menu');
-          });
-        </script>
-      </body>
-    </style>
-  </head>
+    <p>My research is anchored in understanding the intricate connections between disease dynamics and societal variables. It's a puzzle that I'm deeply committed to solving. In this pursuit, I harness the precision of Bayesian inference as a powerful tool. Additionally, I navigate the complex terrain of dynamical analysis to unearth the hidden facets of these interconnected systems.</p>
+  </main>
+  <footer>
+    <span>&copy; 2024 Piklu Mallick</span>
+    <span>FOLLOW:</span>
+    <a href="https://github.com/piklumallick"><img src="assets/github.png" alt="GitHub" class="icon" /></a>
+    <a href="https://www.linkedin.com/in/piklumallick/"><img src="assets/linkedin.png" alt="LinkedIn" class="icon" /></a>
+  </footer>
+  <script src="script.js"></script>
+</body>
 </html>
